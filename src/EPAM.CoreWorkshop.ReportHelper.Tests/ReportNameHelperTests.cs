@@ -10,7 +10,6 @@ namespace EPAM.Core.ReportHelper.Tests
     [TestClass]
     public class ReportNameHelperTests
     {
-
         [TestMethod]
         //[DataRow("Hello: my world", '_', "Hello_ my world")]
         [DataRow("Hello my %world", '_', "Hello my %world")]
@@ -22,7 +21,7 @@ namespace EPAM.Core.ReportHelper.Tests
             result.Should().BeEquivalentTo(expected);
         }
 
-
+    
         [AssemblyInitialize]
         public static void Init(TestContext context)
         {
